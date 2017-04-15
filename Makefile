@@ -1,12 +1,11 @@
+#########################
+# Makefile
+# Simon Goring
+#########################
 
-SOURCES=$(shell find -name *.Rmd)
-TARGETS=$(SOURCES:%.Rmd=%.pdf)
-
-%.html: %.Rmd
-	@echo "$< -> $@"
-	@Rscript -e "rmarkdown::render('$<')"
-
-default: $(TARGETS)
 
 clean:
-	rm -rf $(TARGETS)
+	rm -rf *.html *.md *.docx figure/ cache/
+
+lesson: Neotoma_Lesson.Rmd
+	Rscript -e 'rmarkdown::render("$<")'

@@ -1,5 +1,5 @@
 language: r
-script: make
+script: make lesson
 cache: packages
 r_packages:
   - rmarkdown
