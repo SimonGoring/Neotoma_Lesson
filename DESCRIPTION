@@ -1,0 +1,19 @@
+Title: Paeoecological analysis using `neotoma`, an R package.
+Version: 1.6.2
+Date: 2016-09-21
+Author: Simon J. Goring [aut, cre]
+Authors@R: c(person(given = c("Simon", "J."), family = "Goring",
+    role = c("aut", "cre"), email = "goring@wisc.edu")
+Maintainer: Simon J. Goring <goring@wisc.edu>
+Description: A file used as a lesson within a lab session.
+License: MIT + file LICENSE
+URL: https://github.com/SimonGoring/Neotoma_Lesson
+BugReports: https://github.com/SimonGoring/Neotoma_Lesson/issues
+Depends:
+    R (>= 2.10)
+Imports:
+    neotoma,
+    rmarkdown
+Suggests:
+    knitr
+RoxygenNote: 5.0.1
